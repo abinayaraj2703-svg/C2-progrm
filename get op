@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int main() {
+    char op;
+    int a,b;
+   
+    cout<<" enter the first num ";
+     cin>>a;  
+     cout<<" enter the secount num ";
+     cin>>b;
+     cout<< " enter the operator(+,-,*,/)";
+     cin>>op;
+    if(op=='+')
+    cout<<(a+b);
+    else if(op=='-')
+    cout<<(a-b);
+    else if(op=='*')
+    cout<<(a*b);
+    else if(op=='/')
+    cout<<(a/b);
+    else
+    cout<< "invalid op";
+    return 0;
+}
+o/p
+ enter the first num 5
+ enter the secount num 5
+ enter the operator(+,-,*,/)
+-
+0
+
+}
+     
