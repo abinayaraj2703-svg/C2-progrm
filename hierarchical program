@@ -1,0 +1,82 @@
+#include <iostream>
+
+using namespace std;
+
+class vehicle{
+public:
+    string brand;
+    string model;
+
+};
+
+class car : public vehicle
+{
+public:
+    int doors;
+
+    void data()
+    {
+        cout << "Enter the car brand: ";
+        cin >>  brand;
+        cout << "Enter the car model: ";
+        cin >>  model;
+        cout << "Enter the number of doors: ";
+        cin >>  doors;
+    }
+
+    void display()
+    {
+        cout << "Brand: " << brand << endl;
+        cout << "Model: " << model << endl;
+        cout << "Number of Doors: " << doors << endl;
+    }
+};
+
+class bike : public vehicle
+{
+public:
+    int capacity;
+
+    void data()
+    {
+         cout << "Enter the bike brand: ";
+        cin >> brand;
+        cout << "Enter the bike  model: ";
+        cin >>  model;
+        cout << "Enter the engine capacity: ";
+        cin >> capacity;
+    }
+
+    void display()
+    {
+        cout << "Brand: " << brand << endl;
+        cout << "Model: " << model << endl;
+        cout << "Engine Capacity: " << capacity << " cc" << endl;
+    }
+};
+
+int main()
+{
+    car c;
+    bike b;
+    c.data();
+    b.data();
+    c.display();
+    b.display();
+
+    return 0;
+}
+o/p:
+Enter the car brand: toyata
+Enter the car model: glance
+Enter the number of doors: 4
+Enter the bike brand: yamaha
+Enter the bike  model: mt15
+Enter the engine capacity: 150
+Brand: toyata
+Model: glance
+Number of Doors: 4
+Brand: yamaha
+Model: mt15
+Engine Capacity: 150 cc
+
