@@ -1,0 +1,57 @@
+#include <iostream>
+
+using namespace std;
+
+class emp
+{
+public:
+    string name;
+    int empid;
+
+    void details()
+    {
+        cout << "Enter the name: ";
+        cin >> name;
+
+        cout << "Enter the empid: ";
+        cin >> empid;
+    }
+};
+
+class salary : public emp
+{
+public:
+    int payment;
+
+    void annualamount()
+    {
+        cout << "Enter the basic pay: ";
+        cin >> payment;
+    }
+
+    void display()
+    {
+        cout << "Empid: " << empid << endl;
+        cout << "Name: " << name << endl;
+        cout << "Annual Salary: " << payment * 12 << endl;
+    }
+};
+
+int main()
+{
+    salary s;
+    s.details();
+    s.annualamount();
+    s.display();
+
+
+o/p
+Enter the name: abinaya
+Enter the empid: 01
+Enter the basic pay: 25000
+Empid: 1
+Name: abinaya
+Annual Salary: 300000
+
+    return 0;
+}
